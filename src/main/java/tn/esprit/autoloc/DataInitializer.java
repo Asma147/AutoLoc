@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import tn.esprit.autoloc.Entities.CategorieVehicule;
 import tn.esprit.autoloc.Entities.StatutVehicule;
 import tn.esprit.autoloc.Entities.Vehicule;
-import tn.esprit.autoloc.Repositories.VehiculeRepository;
+import tn.esprit.autoloc.Repository.IVehiculeRepository;
 
 import java.math.BigDecimal;
 
@@ -14,7 +14,7 @@ import java.math.BigDecimal;
 @RequiredArgsConstructor
 public class DataInitializer implements CommandLineRunner {
 
-    private final VehiculeRepository vehiculeRepository;
+    private final IVehiculeRepository vehiculeRepository;
 
     @Override
     public void run(String... args) {
